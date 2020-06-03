@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>StyleCity</title>
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="../cart.js"></script>
+  
+  <div id="main">
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <a class="navbar-brand" href="../index.html">Stronga główna</a>
+      </li>
+
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Odzież</a>
+        
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="../kategorie/Odziez_on.html">ON</a>
+            <a class="dropdown-item" href="../kategorie/Odziez_ona.html">ONA</a>
+        </div>
+        
+      </li>
+      
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true">Obuwie</a>
+        
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="../obuwie/Obuwie_ON.html">ON</a>
+            <a class="dropdown-item" href="../obuwie/Obuwie_ONA.html">ONA</a>
+        </div>
+        
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="../promocje/promocje.html">Promocje</a>
+      </li>
+      
+      <li class="nav-item active">
+         <a class="nav-link" href="../kontakt/kontakt.html">Kontakt</a>
+      </li>
+    </ul>
+
+    <section id="logo-nav">
+      <figure><a href="../index.html"><img src="../stylecity_logo2.png" style="height: 100px; width: 100px;"></a></figure>
+    </section>
+
+    <section id="search">
+      <img src="../icons/search-icon.png" style="width: 45px; height: 35px; padding-right: 10px;">
+      <input class="form-control mr-sm-2" type="search" placeholder="Wyszukaj" aria-label="Wyszukaj">
+    </section>
+
+    <section id="right-corner">
+      <figure><a href="#"><img src="../icons/login-icon.png" style="padding-right:10px; height:32px; width:42px;"></a></figure>
+      <figure><a href="../koszyk/koszyk.html"><img src="../icons/shopping-cart.png" style="height:32px; width:32px;"></a><span style="font-weight: bold; font-size: 15px;">0</span></figure>
+  </div>
+  
+</nav>
+<div id="line"></div>
+</header>
+
+<main class= "products-container" style="display: flex;">
+
+    <section id="koszyk">
+      <h1>Koszyk</h1>
+
+    
+      <section class="products">
+
+
+
+        <h2 style="margin-top: 100px; text-align: center;">PROSZĘ WYBRAĆ COŚ ZE STRONY GŁÓWNEJ!</h2>
+        <!--
+        <figure class="koszyk-produkt">
+          <a href="#"><img src="../icons/close.png" class="koszyk-close"></a>
+          <img src="../images/${item.tag}.PNG" class="koszyk-picture">
+            <section>
+
+              <h1 class="koszyk-producent">${item.producent}</h1>
+              <h1 class="koszyk-nazwa">${item.name}</h1>
+              <h1 class="koszyk-ilosc">Ilość:<span>${item.inCart}</span></h1>
+              <h1 class="koszyk-cena">${item.price}zł</h1>
+
+            </section>
+        </figure> 
+      </section>
+          </figure> -->
+
+        </section>
+    </section>
+
+    <section style="width: 35%;">
+
+      <section id="twoje-dane">
+        <h2>Twoje dane:</h2>
+          <form>
+            <label for="text">Imię*:<input type="text" id="imie" name="imie"></label> <br>
+            <label for="text">Nazwisko*:<input type="text" id="nazwisko" name="nazwisko"></label><br>
+            <label for="text">Email*:<input type="text" id="email" name="email"></label><br>
+            <label for="text">Numer telefonu:<input type="text" id="numer" name="numer"></label>
+          </form>
+      </section>
+
+      <section id="podsumowanie">
+
+        <section id="podsumowanie2">
+        <h2>Podsumowanie:</h2>
+
+        <p>Kwota za produkt/y:<span id="total"></span></p>
+        <p>Przesyłka:<span>15zł</span></p>
+
+        <p style="font-weight:bold;">Łączna kwota:<span id="totallytotal"></span></p>
+        </section>
+
+      </section>
+
+      <button name="send" type="submit" class="submit">
+        <span>Przejdź do zapłaty</span>
+      </button>
+
+    </section>
+</main>
+
+  
+  <div style="border: solid 1px black; margin-bottom: 20px; width: 93%; margin-top: 50px; margin-left: 60px;"></div>
+
+  <main>
+  <article><h1 style="margin-left: 60px;">To też może ci się spodobać!</h1></article>
+
+  <section id="proponowane">
+
+    <figure class="produkt">
+      <a href="ADICOLOR PREMIUM TREFOIL.HTML"><img src="../images/Adidas_hoodie_jasny-blue.PNG" class="picture"></a>
+      <h1 class="cena">279.00zł</h1>
+      <h1 class="nazwa">ADICOLOR PREMIUM TREFOIL HODDIE SWEAT - Bluza z kapturem</h1>
+      <h1 class="producent">adidas Original</h1>
+        <img src="../icons/add-to-cart.png" style="height: 30px; width: 30px;">
+        <img src="../icons/heart_icon.png" style="height: 30px; width: 30px;">
+    </figure>
+
+
+    <figure class="produkt">
+
+      <a href="#"><img src="../images/friends_tshirt.PNG" class="picture"></a>
+      <h1 class="cena">70.00zł</h1>
+      <h1 class="nazwa">FRIENDS - T-shirt z nadrukiem</h1>
+      <h1 class="producent">PULL&BEAR</h1>
+        <img src="../icons/add-to-cart.png" style="height: 30px; width: 30px;">
+        <img src="../icons/heart_icon.png" style="height: 30px; width: 30px;">
+
+    </figure>
+
+
+    <figure class="produkt">
+
+      <a href="#"><img src="../images/3_stripes_shorts.PNG" class="picture"></a>
+      <h1 class="cena">149.00zł</h1>
+      <h1 class="nazwa">3-STRIPE - Spodnie treningowe</h1>
+      <h1 class="producent">adidas Originals</h1>
+        <img src="../icons/add-to-cart.png" style="height: 30px; width: 30px;">
+        <img src="../icons/heart_icon.png" style="height: 30px; width: 30px;">
+
+    </figure>
+
+
+    <figure class="produkt">
+
+      <a href="#"><img src="../images/marvel_sweatshirt.PNG" class="picture"></a>
+      <h1 class="cena">109.00zł</h1>
+      <h1 class="nazwa">MARVEL-SWEATSHIRT - Bluza z kapturem</h1>
+      <h1 class="producent">PULL&BEAR</h1>
+        <img src="../icons/add-to-cart.png" style="height: 30px; width: 30px;">
+        <img src="../icons/heart_icon.png" style="height: 30px; width: 30px;">
+
+    </figure>
+
+
+  </section>
+
+
+</main>  
+
+<div id="line2"></div>
+<footer> 
+
+  <section id="logo-footer">
+    <figure><a href="../index.html"><img src="../stylecity_logo2.png" style="height: 100px; width: 100px;"></a></figure>
+  </section>
+
+  <section id="footer-informations">
+    <ul style="margin-left: 25px;">
+      <li>
+        <a href="#">Dane firmy</a>
+      </li>
+      <li>
+        <a href="#">Regulamin</a>
+      </li>
+      <li>
+        <a href="#">FAQ</a>
+      </li>
+      <li>
+        <a href="#">Kontakt</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="footer-localization-pin">
+    <figure>
+      <img src="../icons/localization_pin-icon.png" style="height: 32px; width: 32px;" class="pin">
+    </figure>
+  </section>
+
+<section id="footer-localization-informations">
+    <article>
+        Gliwice ul.Chorzowska 5
+    </article>
+    <article>
+        Zabrze ul.Roosvelta 70
+    </article>
+  </section> 
+
+  <section id="footer-socialmedia">
+    <article style="text-align: center;">
+      Social media:
+    </article>
+    <section>
+      <a href="#"><img src="../icons/twitter-icon.png" style="width: 35px; height: 35px;"></a>
+      <a href="#"><img src="../icons/pinterest-icon.png" style="width: 35px; height: 35px;"></a>
+      <a href="#"><img src="../icons/instagram-icon.png" style="width: 35px; height: 35px;"></a>
+      <a href="#"><img src="../icons/facebook-icon.png" style="width: 35px; height: 35px;"></a>
+    </section>
+
+  </section>
+
+
+
+
+</footer>
+</div>
+
+<script src="../main.js"></script>
+
+</body>
+</html>

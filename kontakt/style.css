@@ -1,0 +1,106 @@
+body * {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+ul{
+  padding-top: 50px;
+  list-style: none;
+}
+
+li{
+  padding: 5px;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+}
+
+​a:visited, a:link, a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+
+#logo-nav{
+  margin: auto;
+  margin-left: -25px;
+}
+
+#search {
+  padding-top: 50px;
+  display: flex;
+  padding-right: 150px;
+}
+
+#right-corner{
+  padding-bottom: 50px;
+  display: flex;
+}
+
+/* nav sie konczy */
+
+
+main{
+  width: 60%;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+#twoje-dane{
+  border: 1px solid black;
+  border-radius: 15px 15px 15px 15px;
+  margin: auto;
+  padding: 25px;
+}
+
+main section h2 {
+  text-align: center;
+}
+
+label {
+  margin-top: 10px ;
+}
+
+.submit {
+  border-radius: 15px 15px 15px 15px;
+}
+
+/* footer sie zaczyna */
+
+footer {
+  display: flex;
+  background-color: #F8F9FA;
+  color: black;
+  margin-top: 150px;
+}
+
+footer section ul{
+  list-style: none;
+  text-decoration: none;
+  text-transform: none;
+  display: flex;
+}
+
+#footer-localization-pin{
+  margin-top: 47px;
+  margin-left: 270px;
+}
+
+#footer-localization-informations {
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+#footer-socialmedia{
+  margin-left: auto;
+  margin-right: 75px;
+  margin-top: 30px;
+}
+
+
